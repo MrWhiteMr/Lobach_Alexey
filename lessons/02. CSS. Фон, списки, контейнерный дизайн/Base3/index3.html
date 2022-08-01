@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head{
+            width: 15em;
+            background-color: brown;
+            float: left;
+            overflow: hidden;
+        }
+        .art{
+            margin-bottom: 0.2em;
+            max-width: 100%;
+            background-color: grey;
+            overflow: hidden;
+
+        }
+        .footer{
+            clear: both;
+            background-color: aqua;
+            height: fit-content;
+        }
+        img{float: right;}
+        .clear{
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="head"><h3>Блок навигации</h3>
+        <ul>
+            <li>
+                Ширина 15em
+            </li>
+            <li>
+                Должен присутствовать цвет фона
+            </li>
+            <li>
+                Располагаться слева
+            </li>
+            <li>
+                #!/usr/bin/env python
+                print 'Hello. I am a python program.'
+            </li>
+        </ul>
+
+    </div>
+    <div class="art"><h3>Статья 1</h3>
+        Размер блока:
+        Занимает всю доступную ширину
+        Должен присутствовать цвет фона
+        Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom
+
+    </div>
+    <div class="art"><h3>Статья 2</h3>
+        Размер блока:
+        Занимает всю доступную ширину
+        Должен присутствовать цвет фона
+        Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom. Картинка вставлена при помощи тега, 
+        плавание организовано по правому краю внутри данной статьи для этой картинки.
+        <img src="icon_mail.png" alt="img">
+        <div class="clear"></div>
+    </div>
+    <div class="footer">
+        Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом.
+    </div>
+
+</body>
+</html>
