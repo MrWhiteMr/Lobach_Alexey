@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .art{
+            width: 600px;
+            border: solid 1px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            text-indent: 1em;
+        }
+        .list > div:nth-child(1):hover::after{content: url(word.jpg);}
+        .list > div:nth-child(2):hover::after{content: url(PDF.png);}
+        .list > div:nth-child(3):hover::after{content: url(Zip.gif);}
+    </style>
+</head>
+<body>
+    <h1>Форматы файлов.</h1>
+    <div class="art">.DOC или .doc (от англ. <img src="link.png"><a href="">document</a>) - расширение имени файла, используемое для файлов, представляющих текст, с разметкой или без. 
+            Расширение .DOC часто использовалось для обозначения простых текстовых файлов без форматирования, однако позже стало использоваться
+            для двоичных форматов с разметкой.<br>
+            <a href="">Документ MS Word</a><img src="Word.jpg">
+    </div>
+    <div class="art">Portable document format (<img src="link.png"><a href="">PDF</a>) - межплатформенный формат электронных документов, разработанный фирмой Adobe Systems с использованием
+            ряда возможностей языка Postscript.<br>
+            <a href="">Документ PDF</a><img src="PDF.png"> 
+    </div>
+    <div class="art">ZIP - популярный формат сжатия данных и арзивации файлов. Файл в этом формате обычно имеет расширение <img src="link.png"><a href="">.zip</a> и хранит в сжатом или 
+            несжатом виде один или несколько файлов, которые можно из него извлечь путем распаковки с помощью специальной программы.<br>
+            <a href="">Архив</a><img src="Zip.gif"> 
+    </div>
+    <h2>Это список файлов</h2>
+    <div class="list">
+        <div><img src="blank.jpg"><a href="">Документ MS Word</a></div>
+        <div><img src="blank.jpg"><a href="">Документ PDF</a></div>
+        <div><img src="blank.jpg"><a href="">Архив</a></div>
+    </div>
+
+</body>
+</html>

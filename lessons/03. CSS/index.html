@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (min-device-width: 928px) and (max-device-width: 1920px) {
+            div{
+                background-color: rgb(165, 161, 161);
+                width: 150px;
+                height: 20px;
+                float: left;
+                border-radius: 5px;
+                border: solid black 1px;
+                cursor: pointer;
+                color: rgb(90, 90, 90);
+            }
+            .day:hover{
+                background-color: rgb(90, 90, 90);
+                color: rgb(165, 161, 161);
+                
+            }
+            .menu{
+                opacity: 0;
+            }
+            .day:hover .menu{ 
+                opacity: 1;
+                position: relative; 
+                left: -2px;
+                transition-duration: .8s;
+
+            }    
+        }
+        @media screen and (min-device-width: 319px)and (max-device-width: 927px) {
+            div{
+                background-color: rgb(165, 161, 161);
+                width: 150px;
+                height: 20px;
+                border-radius: 5px;
+                border: solid black 1px;
+                cursor: pointer;
+                color: rgb(90, 90, 90);
+            }
+            .day:hover{
+                background-color: rgb(90, 90, 90);
+                color: rgb(165, 161, 161);
+            }
+            .menu{
+                opacity: 0;
+            }
+            .day:hover .menu{
+                opacity: 1; position: relative; left: 150px; bottom: 19px; transition-duration: .8s;
+            } 
+        }
+    </style>
+
+</head>
+<body>
+    <div>Понедельник</div>
+    <div>Вторник</div>
+    <div class="day">Среда
+        <div class="menu">
+            <div>Завтрак</div>
+            <div>Обед</div>
+            <div>Ужин</div>
+        </div>
+    </div>
+    <div>Четверг</div>
+    <div>Пятница</div>
+    <div>Суббота</div>
+    
+</body>
+</html>

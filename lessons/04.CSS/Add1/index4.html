@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .art{
+            width: 600px;
+            border: solid 1px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            text-indent: 1em;
+        }
+        a[href^='doc']::before{
+            content: url(link.png);
+        }
+        a[href^='pdf']::before{
+            content: url(link.png);
+        }
+        a[href^='zip']::before{
+            content: url(link.png);
+        }
+        div a[href^='WORD']::after{
+            content: url(Word.jpg);
+        }
+        div a[href^='PDF']::after{
+            content: url(PDF.png);
+        }
+        div a[href^='ZIP']::after{
+            content: url(Zip.gif);
+        }
+        ul{
+            padding-left: 0px;
+        }
+        li{
+            list-style: none;
+        }
+        li a[href^='WORD']::before{
+            content: url(blank.jpg);
+        }
+        li a[href^='PDF']::before{
+            content: url(blank.jpg);
+        }
+        li a[href^='ZIP']::before{
+            content: url(blank.jpg);
+        }
+        li:nth-child(1):hover::after{content: url(word.jpg);}
+        li:nth-child(2):hover::after{content: url(PDF.png);}
+        li:nth-child(3):hover::after{content: url(Zip.gif);}
+    </style>
+</head>
+<body>
+    <h1>Форматы файлов.</h1>
+    <div class="art">.DOC или .doc (от англ. <a href="document">document</a>) - расширение имени файла, используемое для файлов, представляющих текст, с разметкой или без. 
+            Расширение .DOC часто использовалось для обозначения простых текстовых файлов без форматирования, однако позже стало использоваться
+            для двоичных форматов с разметкой.<br>
+            <a href="WORD">Документ MS Word</a>
+    </div>
+    <div class="art">Portable document format (<a href="pdf">PDF</a>) - межплатформенный формат электронных документов, разработанный фирмой Adobe Systems с использованием
+            ряда возможностей языка Postscript.<br>
+            <a href="PDF">Документ PDF</a> 
+    </div>
+    <div class="art">ZIP - популярный формат сжатия данных и арзивации файлов. Файл в этом формате обычно имеет расширение <a href="zip">.zip</a> и хранит в сжатом или 
+            несжатом виде один или несколько файлов, которые можно из него извлечь путем распаковки с помощью специальной программы.<br>
+            <a href="ZIP">Архив</a>
+    </div>
+    <h2>Это список файлов</h2>
+    <ul>
+        <li><a href="WORD">Документ MS Word</a</li>
+        <li><a href="PDF">Документ PDF</a></li>
+        <li><a href="ZIP">Архив</a></li>
+    </ul>
+
+
+
+</body>
+</html>
